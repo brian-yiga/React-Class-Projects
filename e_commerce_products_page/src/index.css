@@ -70,13 +70,13 @@ h1 {
     font-weight: 500;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .storyBoard {
         grid-template-columns: repeat(2, 1fr); 
 }
 }
 
-@media (max-width: 785px) {
+@media screem and (max-width: 785px) {
     .storyBoard {
         grid-template-columns: 1fr; 
 }
