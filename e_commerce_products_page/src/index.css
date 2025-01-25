@@ -71,13 +71,13 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
-    .storyBoard {
+    .productDisplay {
         grid-template-columns: repeat(2, 1fr); 
 }
 }
 
 @media screen and (max-width: 785px) {
-    .storyBoard {
+    .productDisplay {
         grid-template-columns: 1fr; 
 }
 }
