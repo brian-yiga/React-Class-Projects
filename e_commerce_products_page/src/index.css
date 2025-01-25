@@ -69,3 +69,15 @@ h1 {
     font-size: 15px;
     font-weight: 500;
 }
+
+@media (max-width: 992px) {
+    .storyBoard {
+        grid-template-columns: repeat(2, 1fr); 
+}
+}
+
+@media (max-width: 785px) {
+    .storyBoard {
+        grid-template-columns: 1fr; 
+}
+}
