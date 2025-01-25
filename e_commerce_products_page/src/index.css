@@ -76,7 +76,7 @@ h1 {
 }
 }
 
-@media screem and (max-width: 785px) {
+@media screen and (max-width: 785px) {
     .storyBoard {
         grid-template-columns: 1fr; 
 }
