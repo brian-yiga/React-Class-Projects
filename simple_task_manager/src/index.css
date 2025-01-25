@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: grey;
+}
+
+.taskManager {
+    width: 50%;
+    margin: auto;
+    background-color: rgb(66, 81, 94);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.taskInput {
+    width: 80%;
+   
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 20px;
+}
+
+input {
+    width: 80%;
+}
+
+.listDisplay {
+    
+    width: 80%;
+}
+
+ul {
+    width: 80%; 
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; 
+}
+
+
