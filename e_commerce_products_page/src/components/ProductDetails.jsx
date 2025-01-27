@@ -8,7 +8,7 @@ const ProductDetails = ({
   image,
   onAddToCart,
   category,
-  rating
+  rating,
 }) => {
   return (
     <div className="productCard">
@@ -19,14 +19,10 @@ const ProductDetails = ({
         <p className="price">${price}</p>
         <p className="category">{category}</p>
         <p className="rating">Rating {rating.rate}</p>
-        <p className="stock">{
-          isInStock ? 'In Stock' : 'Out Of Stock'
-        }</p>
+        <p className="stock">{isInStock ? "In Stock" : "Out Of Stock"}</p>
       </div>
-      <button
-        id="addToCart"
-        onClick={() => onAddToCart(name)}>
-          Add To Cart
+      <button id="addToCart" onClick={() => onAddToCart(name)}>
+        Add To Cart
       </button>
     </div>
   );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import ProductDetails from './components/ProductDetails';
-import logo from './assets/logo.png'
+import React, { useState, useEffect } from "react";
+import ProductDetails from "./components/ProductDetails";
+import logo from "./assets/logo.png";
 
 const App = () => {
   // const products = [
@@ -61,54 +61,48 @@ const App = () => {
   //   }
   // ];
   const handleToAddToCart = (productName) => {
-    alert(`${productName} has been added to the cart`)
+    alert(`${productName} has been added to the cart`);
   };
 
   const [data, setData] = useState([]);
-  const apiUrl = 'https://fakestoreapi.com/products';
+  const apiUrl = "https://fakestoreapi.com/products";
 
-  useEffect(()=>{
+  useEffect(() => {
     const fetchData = async () => {
       try {
-      const result = await fetch(apiUrl);
-      const data = await result.json();
-      setData(data);
-    } catch (error) {
-      console.error('error catching data', error);
-    }
-  };
+        const result = await fetch(apiUrl);
+        const data = await result.json();
+        setData(data);
+      } catch (error) {
+        console.error("error catching data", error);
+      }
+    };
     fetchData();
-  }, [])
-
-  
-
-  
+  }, []);
 
   return (
-    <div className='container'>
-      <header className='header'>
-        <img src={logo}alt='ABC Logo' />
+    <div className="container">
+      <header className="header">
+        <img src={logo} alt="ABC Logo" />
         <h1>ABCSHOPPING.COM</h1>
-        </header>
+      </header>
       <div className="productDisplay">
-      {
-        data.map((product, index) => (
+        {data.map((product, index) => (
           <ProductDetails
-          key={index}
-          image={product.image}
-          title={product.name}
-          description={product.description}
-          price={product.price}
-          category={product.category}
-          rating={product.rating}
-          isInStock={true}
-          onAddToCart={handleToAddToCart}
-           />
-        ))
-      }
+            key={index}
+            image={product.image}
+            title={product.name}
+            description={product.description}
+            price={product.price}
+            category={product.category}
+            rating={product.rating}
+            isInStock={true}
+            onAddToCart={handleToAddToCart}
+          />
+        ))}
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
