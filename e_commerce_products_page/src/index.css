@@ -49,8 +49,15 @@ img {
     align-items: center;
 }
 
-h1 {
+header {
     font-size: 60px;
+    font-weight: 900;
+    box-shadow: 0 5px 10px grey;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(236, 133, 96);
+    color: brown;
 }
 
 #addToCart {
@@ -77,7 +84,7 @@ h1 {
 }
 
 @media screen and (max-width: 785px) {
-    .productDisplay {
+    .produc {
         grid-template-columns: 1fr; 
 }
 }

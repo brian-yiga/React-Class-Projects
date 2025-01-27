@@ -58,7 +58,7 @@ const App = () => {
 
   return (
     <div className='container'>
-      <h1>SHOPPING.COM</h1>
+      <header>SHOPPING.COM</header>
       <div className="productDisplay">
       {
         products.map((product, index) => (
