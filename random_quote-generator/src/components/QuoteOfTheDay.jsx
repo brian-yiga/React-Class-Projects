@@ -36,7 +36,7 @@ const QuoteOfTheDay = () => {
     //     setQuoteHeading(newQuote)
     // }
 
-    const apiUrl = fetch('https://zenquotes.io/api/quotes/');
+    const apiUrl = fetch("https://type.fit/api/quotes");
     const [quoteHeading, setQuoteHeading] = useState({});
 
     const getQuote = async () => {
