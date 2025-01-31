@@ -1,63 +1,15 @@
-body {
-    margin: 0;
-    padding: 0 10px;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(209, 133, 133);
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
 }
 
-.storyBoard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    text-align: justify;
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 150px;
+    font-size: 18px;
 }
 
-.blog {
-    background-color: rgb(235, 206, 211);
-    padding: 10px 10px;
-    border-radius: 5px;
-}
-
-h1 {
-    color: brown;
-}
-
-#title,
-#author,
-#category {
-   font-weight: 900;
-}
-
-#category {
-    color: grey;
-    font-size: 12px;
-}
-
-#title {
-    color: rgb(92, 92, 182);
-}
-
-#searchBar {
-    width: 50%;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-}
-
-#readMore {
-    background-color: transparent;
-    border: none;
-    color: blueviolet;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-#searchButton {
-    cursor: pointer;
-    color: rgb(92, 92, 182);
-    background-color: transparent;
-    border: none;
-    font-size: 15px;
-}
